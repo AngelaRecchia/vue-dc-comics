@@ -5,7 +5,7 @@
               <li v-for="(item, index) in li" :key="index">
                     <a href="#">
                         
-                        <img :src="'../assets/' + item.linkImg" alt="">
+                        <img :src="publicPath + 'img/' + item.linkImg" alt="">
                         {{item.text}}
                     </a>
                 </li>
@@ -19,6 +19,7 @@ export default {
   name: "Bluenav",
   data() {
       return {
+          publicPath: process.env.BASE_URL,
           li: [
                 {
                     text: "Digital Comics",
@@ -26,7 +27,7 @@ export default {
                 },
                 {
                     text: "DC Merchandise",
-                    linkImg: "buy-comics-marchandise.png",
+                    linkImg: "buy-comics-merchandise.png",
                 },
                 {
                     text: "Subscription",
@@ -38,7 +39,7 @@ export default {
                 },
                 {
                     text: "DC Power Visa",
-                    linkImg: "buy-comics-power-visa.svg",
+                    linkImg: "buy-dc-power-visa.svg",
                 },
           ]
       }
@@ -64,6 +65,15 @@ export default {
         li {
             color: white;
             text-transform: uppercase;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            img {
+                max-height: 50px;
+                max-width: 50px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
         }
     }
 </style>

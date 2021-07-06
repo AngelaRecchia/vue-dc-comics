@@ -1,7 +1,11 @@
 <template>
   <section>
       <main>
-          <div class="container"></div>
+          <div class="container">
+              <!-- <ul v-for="(list, index) in siteMap" :key="index">
+                  <li v-for="(elem, jindex) in list" :key="jindex"></li>
+              </ul> -->
+          </div>
       </main>
       <footer>
           <div class="container"></div>
@@ -19,7 +23,119 @@ export default {
                   title: "DC Comics",
                   elements: [
                       {
-                          text: Characters,
+                          text: "Characters",
+                          link: "#"
+                      },
+                      {
+                          text: "Comics",
+                          link: "#"
+                      },
+                      {
+                          text: "Movies",
+                          link: "#"
+                      },
+                      {
+                          text: "TV",
+                          link: "#"
+                      },
+                      {
+                          text: "Games",
+                          link: "#"
+                      },
+                      {
+                          text: "Videos",
+                          link: "#"
+                      },
+                      {
+                          text: "News",
+                          link: "#"
+                      }
+                  ],
+              },
+              {
+                  title: "Shop",
+                  elements: [
+                      {
+                          text: "Shop DC",
+                          link: "#"
+                      },
+                      {
+                          text: "Shop DC Collectibles",
+                          link: "#"
+                      }
+                  ]
+              },
+              {
+                  title: "DC",
+                  elements: [
+                      {
+                          text: "Terms Of Use",
+                          link: "#"
+                      },
+                      {
+                          text: "Privacy Policy (New)",
+                          link: "#"
+                      },
+                      {
+                          text: "Ad Choices",
+                          link: "#"
+                      },
+                      {
+                          text: "Advertising",
+                          link: "#"
+                      },
+                      {
+                          text: "Jobs",
+                          link: "#"
+                      },
+                      {
+                          text: "Subscriptions",
+                          link: "#"
+                      },
+                      {
+                          text: "Talent Workshops",
+                          link: "#"
+                      },
+                      {
+                          text: "CPSC Certificates",
+                          link: "#"
+                      },
+                      {
+                          text: "Ratings",
+                          link: "#"
+                      },
+                      {
+                          text: "Shop Help",
+                          link: "#"
+                      },
+                      {
+                          text: "Contact Us",
+                          link: "#"
+                      }
+                  ]
+              },
+              {
+                  title: "Sites",
+                  elements: [
+                      {
+                          text: "DC",
+                          link: "#"
+                      },
+                      {
+                          text: "MAD Magazine",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Kids",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Universe",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Power Visa",
+                          link: "#"
                       }
                   ]
               }
