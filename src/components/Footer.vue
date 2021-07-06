@@ -11,7 +11,17 @@
           </div>
       </main>
       <footer>
-          <div class="container"></div>
+          <div class="container">
+              <a href="#"><div id="btn">Sign-up now!</div></a>
+              <div id="social">
+                  <span>Follow Us</span>
+                  <a href="#"><img src="../assets/img/footer-facebook.png" alt="fb icon"></a>
+                  <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter icon"></a>
+                  <a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube icon"></a>
+                  <a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest icon"></a>
+                  <a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope icon"></a>
+              </div>
+          </div>
       </footer>
   </section>
 </template>
@@ -156,8 +166,8 @@ export default {
             background-size: cover;
             
             .container {
-                height: 405px;
-                padding: 50px 0;
+                height: 410px;
+                padding: 40px 0 20px;
                 background: url("../assets/img/dc-logo-bg.png") no-repeat right;
                 background-size: 60%;
                 display: flex;
@@ -177,14 +187,45 @@ export default {
                     list-style: none;
                     color: grey;
                     display: inline-block;
-                    margin: 10px 0;
+                    margin: 5px 0;
+                    li {
+                        margin: 3px 0;
+                    }
                 }
             }
             
         }
         footer {
-            height: 90px;
             background-color: $grey;
+            .container {
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                #btn {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 10px 15px;
+                    border: 2px solid $blue;
+                }
+                #social {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 26px;
+                        color: $blue;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-right: 20px;
+                    }
+                    a {
+                        margin: 0 10px;
+                    }
+                }
+            }
+           
         }
     }
 </style>
