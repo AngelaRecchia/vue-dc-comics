@@ -2,9 +2,12 @@
   <section>
       <main>
           <div class="container">
-              <!-- <ul v-for="(list, index) in siteMap" :key="index">
-                  <li v-for="(elem, jindex) in list" :key="jindex"></li>
-              </ul> -->
+              <div class="lists" v-for="(list, index) in siteMap" :key="index">
+                  <h3>{{list.title}}</h3>
+                  <ul>
+                      <li v-for="(elem, jindex) in list.elements" :key="jindex" class="listElem"><a href="elem.link">{{elem.text}}</a></li>
+                  </ul>
+              </div>
           </div>
       </main>
       <footer>
@@ -149,13 +152,33 @@ export default {
     @import "../style/vars.scss";
     section {
         main {
-            height: 300px;
             background: url("../assets/img/footer-bg.jpg") no-repeat;
             background-size: cover;
+            
             .container {
-                height: 100%;
+                height: 405px;
+                padding: 50px 0;
                 background: url("../assets/img/dc-logo-bg.png") no-repeat right;
                 background-size: 60%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                .lists {
+                    width: 200px;
+                }
+                h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+
+                ul {
+                    list-style: none;
+                    color: grey;
+                    display: inline-block;
+                    margin: 10px 0;
+                }
             }
             
         }
