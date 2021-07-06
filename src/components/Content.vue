@@ -1,5 +1,5 @@
 <template>
-    <main></main>
+    <main>Content Here</main>
 </template>
 
 <script>
@@ -8,4 +8,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+    main {
+        background-color: black;
+        height: 100px;
+        color: white
+    }
+</style>

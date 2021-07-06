@@ -8,4 +8,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+    nav {
+        height: 120px;
+        background-color: #0282F9;
+    }
+</style>
