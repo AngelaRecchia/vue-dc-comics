@@ -1,7 +1,11 @@
 <template>
   <section>
-      <main></main>
-      <footer></footer>
+      <main>
+          <div class="container"></div>
+      </main>
+      <footer>
+          <div class="container"></div>
+      </footer>
   </section>
 </template>
 
@@ -15,7 +19,14 @@ export default {
     section {
         main {
             height: 300px;
-            background: url("../assets/img/dc-logo-bg.png") no-repeat right, url("../assets/img/footer-bg.jpg");
+            background: url("../assets/img/footer-bg.jpg") no-repeat;
+            background-size: cover;
+            .container {
+                height: 100%;
+                background: url("../assets/img/dc-logo-bg.png") no-repeat right;
+                background-size: 60%;
+            }
+            
         }
         footer {
             height: 90px;

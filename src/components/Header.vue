@@ -1,12 +1,14 @@
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt="logo dc">
-        <ul>
-            <li>Esempio</li>
-            <li>Esempio</li>
-            <li>Esempio</li>
-            <li>Esempio</li>
-        </ul>
+        <div class="container">
+            <img src="../assets/img/dc-logo.png" alt="logo dc">
+            <ul>
+                <li>Esempio</li>
+                <li>Esempio</li>
+                <li>Esempio</li>
+                <li>Esempio</li>
+            </ul>
+        </div>
     </header>
 </template>
     
@@ -18,17 +20,20 @@ export default {
 
 <style lang="scss" scoped>
     header {
-        height: 100px;
-        width: 100%;
         background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            height: 80%;
+        .container {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                height: 70%;
+            }
+            li {
+                display: inline-block;
+            }
+            
         }
-        li {
-            display: inline-block;
-        }
+        
     }
 </style>

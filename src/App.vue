@@ -35,4 +35,7 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  @import "style/commons.scss";
+  @import "style/vars.scss";
+</style>

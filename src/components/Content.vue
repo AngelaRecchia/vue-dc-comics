@@ -1,5 +1,7 @@
 <template>
-    <main>Content Here</main>
+    <main>
+        <div class="container">Content Here</div>
+    </main>
 </template>
 
 <script>
@@ -12,6 +14,6 @@ export default {
     main {
         background-color: black;
         height: 100px;
-        color: white
+        color: white;
     }
 </style>
