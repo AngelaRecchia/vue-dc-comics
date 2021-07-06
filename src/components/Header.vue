@@ -91,7 +91,7 @@ export default {
                     display: inline-block;
                     text-transform: uppercase;
                     font-weight: bold;
-                    color: $grey;
+                    color: grey;
                     margin: 0 2%;
                     &:hover {
                         color: $blue;
