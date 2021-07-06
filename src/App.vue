@@ -6,7 +6,16 @@ bello solido, passiamo al Sass! Bonus: Creare un componente aggiuntivo per
 gestire la fascia azzurra con le icone. */
 
 <template>
-  <div id="app"></div>
+  <div id="app">
+
+    <Header/>
+    <main>
+      <Content/>
+      <Bluenav/>
+    </main>
+    <Footer/>
+
+  </div>
 </template>
 
 <script>

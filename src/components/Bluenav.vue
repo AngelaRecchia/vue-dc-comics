@@ -1,7 +1,11 @@
-<template></template>
+<template>
+  <nav></nav>
+</template>
 
 <script>
-export default {};
+export default {
+  name: "Bluenav"
+};
 </script>
 
 <style></style>

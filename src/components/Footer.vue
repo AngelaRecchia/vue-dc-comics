@@ -1,7 +1,11 @@
-<template></template>
+<template>
+  <footer></footer>
+</template>
 
 <script>
-export default {};
+export default {
+  name: "Footer",
+};
 </script>
 
 <style></style>

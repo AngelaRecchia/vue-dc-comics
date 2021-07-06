@@ -1,7 +1,11 @@
-<template></template>
+<template>
+    <main></main>
+</template>
 
 <script>
-export default {};
+export default {
+    name: "Content"
+};
 </script>
 
 <style></style>
