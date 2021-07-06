@@ -12,6 +12,20 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+      return {
+          siteMap: [
+              {
+                  title: "DC Comics",
+                  elements: [
+                      {
+                          text: Characters,
+                      }
+                  ]
+              }
+          ]
+      }
+  }
 };
 </script>
 
