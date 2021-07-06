@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/vars.scss";
     main {
         background-color: black;
         height: 100px;

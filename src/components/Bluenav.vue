@@ -11,8 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/vars.scss";
     nav {
         height: 120px;
-        background-color: #0282F9;
+        background-color: $blue;
     }
 </style>

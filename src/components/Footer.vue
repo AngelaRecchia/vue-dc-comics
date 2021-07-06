@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "../style/vars.scss";
     section {
         main {
             height: 300px;
@@ -30,7 +31,7 @@ export default {
         }
         footer {
             height: 90px;
-            background-color: #303030;
+            background-color: $grey;
         }
     }
 </style>
