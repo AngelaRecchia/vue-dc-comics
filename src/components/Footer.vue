@@ -12,7 +12,7 @@
       </main>
       <footer>
           <div class="container">
-              <a href="#"><div id="btn">Sign-up now!</div></a>
+              <a href="#"><div class="btn">Sign-up now!</div></a>
               <div id="social">
                   <span>Follow Us</span>
                   <a href="#"><img src="../assets/img/footer-facebook.png" alt="fb icon"></a>
@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
     @import "../style/vars.scss";
+    @import "../style/mixins.scss";
     section {
         main {
             background: url("../assets/img/footer-bg.jpg") no-repeat;
@@ -82,13 +83,8 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                #btn {
-                    color: white;
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    padding: 10px 15px;
-                    border: 2px solid $blue;
+                .btn {
+                    @include btn(transparent, 20px, 10px 15px);
                 }
                 #social {
                     display: flex;

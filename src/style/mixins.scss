@@ -1,0 +1,11 @@
+@import "vars.scss";
+@mixin btn($bg, $size, $padding ) {
+    background-color: $bg;
+    padding: $padding;
+    font-size: $size;
+    border: 2px solid $blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
