@@ -25,7 +25,7 @@ export default {
     @import "../style/vars.scss";
     header {
         background-color: #fff;
-        font-size: 20px;
+        font-size: 17px;
         .container {
             height: 100px;
             display: flex;
