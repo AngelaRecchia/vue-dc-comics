@@ -5,7 +5,7 @@
               <li v-for="(item, index) in li" :key="index">
                     <a href="#">
                         
-                        <img :src="publicPath + 'img/' + item.linkImg" alt="">
+                        <img :src="item.linkImg" alt="">
                         {{item.text}}
                     </a>
                 </li>
@@ -23,23 +23,23 @@ export default {
           li: [
                 {
                     text: "Digital Comics",
-                    linkImg: "buy-comics-digital-comics.png",
+                    linkImg: require('../assets/img/buy-comics-digital-comics.png'),
                 },
                 {
                     text: "DC Merchandise",
-                    linkImg: "buy-comics-merchandise.png",
+                    linkImg: require('../assets/img/buy-comics-merchandise.png')
                 },
                 {
                     text: "Subscription",
-                    linkImg: "buy-comics-subscriptions.png",
+                    linkImg: require('../assets/img/buy-comics-subscriptions.png'),
                 },
                 {
                     text: "Comic Shop Locator",
-                    linkImg: "buy-comics-shop-locator.png",
+                    linkImg:require('../assets/img/buy-comics-shop-locator.png'),
                 },
                 {
                     text: "DC Power Visa",
-                    linkImg: "buy-dc-power-visa.svg",
+                    linkImg: require('../assets/img/buy-dc-power-visa.svg'),
                 },
           ]
       }

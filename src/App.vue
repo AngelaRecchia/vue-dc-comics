@@ -9,6 +9,7 @@ gestire la fascia azzurra con le icone. */
   <div id="app">
 
     <Header/>
+    <Jumbo/>
     <main>
       <Content/>
       <Bluenav/>
@@ -20,6 +21,7 @@ gestire la fascia azzurra con le icone. */
 
 <script>
 import Header from "./components/Header.vue";
+import Jumbo from "./components/Jumbo.vue";
 import Content from "./components/Content.vue";
 import Bluenav from "./components/Bluenav.vue";
 import Footer from "./components/Footer.vue";
@@ -28,9 +30,11 @@ export default {
   name: "App",
   components: {
     Header,
+    Jumbo,
     Content,
     Bluenav,
     Footer,
+    
   },
 };
 </script>
